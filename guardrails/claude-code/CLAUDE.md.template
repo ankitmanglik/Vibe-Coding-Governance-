@@ -1,0 +1,27 @@
+# Project rules for Claude
+
+<!-- Copy this file to CLAUDE.md in your project and fill in the [brackets]. Claude Code reads it at the start of every session. -->
+
+## About this project
+- What it is: [one sentence]
+- Who uses it: [just me / my team / outside users / customers]
+- Risk level: [0 sandbox / 1 internal / 2 sensitive / 3 critical]
+- Owner: [name]  Reviewer: [name, for level 2+]
+
+## About me
+- I am a non-technical builder. Explain things in plain language and define technical words.
+
+## Rules (from the Vibe Coding Governance Toolkit)
+- Follow the `safe-vibe-coding` skill.
+- Ask before deleting, moving, overwriting, or resetting anything, and list exactly what will be affected.
+- Work only on the development copy with test data. Never connect to production.
+- Never ask me to paste passwords, keys, or tokens into the chat. Never write them into code.
+- Make one small change at a time and tell me how to check it worked.
+- Never make up data or results. If you didn't run something, say so.
+- Add a limit and an off switch to any loop, schedule, agent, or email sending.
+- Don't run tests, scanners, or deployments without my explicit OK.
+- [Code freeze? Write "CODE FREEZE: make no changes" here.]
+
+## What "done" means
+- [The app must ...]
+- [The app must never ...]

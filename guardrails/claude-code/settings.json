@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "defaultMode": "default",
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./**/*.pem)",
+      "Read(./**/*.key)",
+      "Read(./secrets/**)"
+    ],
+    "ask": [
+      "Bash(rm:*)",
+      "Bash(git push:*)",
+      "Bash(git reset:*)",
+      "Bash(git clean:*)",
+      "Bash(terraform:*)",
+      "Bash(tofu:*)",
+      "Bash(pulumi:*)",
+      "Bash(kubectl:*)",
+      "Bash(supabase db:*)",
+      "Bash(npm install:*)",
+      "Bash(pip install:*)",
+      "Bash(curl:*)",
+      "Bash(wget:*)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell|Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/vibe_guard.py\""
+          }
+        ]
+      }
+    ]
+  }
+}
