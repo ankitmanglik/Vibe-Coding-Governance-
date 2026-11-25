@@ -26,7 +26,7 @@ Thirty public incidents show the same six failures repeating:
 4. Unfamiliar word? See the [glossary](guides/glossary.md).
 
 **I'm adopting this for my organization**
-1. Adopt the [policies](policies/) (edit names and roles to fit).
+1. Adopt the [sample policy](sample-policies/) (fill in the blanks); the [policies](policies/) folder explains the reasoning behind each rule.
 2. Publish the [procedures](procedures/) where people will find them.
 3. Deploy the [Claude skills](skills/) and the [guardrails](guardrails/).
 4. Start a project register (POL-01, RT-5).
@@ -34,6 +34,7 @@ Thirty public incidents show the same six failures repeating:
 ## What's inside
 
 ```
+sample-policies/ Ready-to-adopt master policy, forms, adoption guide, ISO 27001 / SOC 2 mapping
 policies/       Org rules, each control with an ID (e.g. EB-2) and the incidents behind it
   POL-01 Risk tiers and roles          POL-05 Cost and automation limits
   POL-02 Access and secrets            POL-06 Verifying AI output
